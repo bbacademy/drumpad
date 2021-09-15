@@ -1,0 +1,47 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #333;
+  color: black;
+}
+main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  position: fixed;
+  grid-template-rows: 50px auto;
+  gap: 2px;
+}
+header {
+  background: darksalmon;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  padding: 12px 20px;
+}
+header button {
+  height: 26px;
+  font-size: 14px;
+  line-height: 1em;
+  padding: 4px 0.6em;
+  margin: 0;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 2px;
+}
+section button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  background: snow;
+}
+section button:hover {
+  background: lightgray;
+}
+section button.active,
+section button:active {
+  background: darkgray;
+}
